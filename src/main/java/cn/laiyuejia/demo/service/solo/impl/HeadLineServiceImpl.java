@@ -3,9 +3,10 @@ package cn.laiyuejia.demo.service.solo.impl;
 import cn.laiyuejia.demo.entity.bo.HeadLine;
 import cn.laiyuejia.demo.entity.dto.Result;
 import cn.laiyuejia.demo.service.solo.HeadLineService;
+import cn.laiyuejia.simpleframework.core.annotation.Service;
 
 import java.util.List;
-
+@Service
 public class HeadLineServiceImpl implements HeadLineService {
     @Override
     public Result<Boolean> addHeadLine(HeadLine headLine) {

@@ -26,7 +26,7 @@ public class BeanContainerTest {
     public void test1_loadBeanTest(){
         Assert.assertEquals(false,beanContainer.isLoaded());
         beanContainer.loadBeans("cn.laiyuejia.demo");
-        Assert.assertEquals(4,beanContainer.size());
+        Assert.assertEquals(7,beanContainer.size());
         Assert.assertEquals(true,beanContainer.isLoaded());
     }
 

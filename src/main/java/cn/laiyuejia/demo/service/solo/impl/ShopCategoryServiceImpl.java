@@ -3,9 +3,11 @@ package cn.laiyuejia.demo.service.solo.impl;
 import cn.laiyuejia.demo.entity.bo.ShopCategory;
 import cn.laiyuejia.demo.entity.dto.Result;
 import cn.laiyuejia.demo.service.solo.ShopCategoryService;
+import cn.laiyuejia.simpleframework.core.annotation.Service;
 
 import java.util.List;
 
+@Service
 public class ShopCategoryServiceImpl implements ShopCategoryService {
 
     @Override

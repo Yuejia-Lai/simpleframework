@@ -1,5 +1,6 @@
 package cn.laiyuejia.simpleframework.core;
 
+import cn.laiyuejia.simpleframework.aop.annotation.Aspect;
 import cn.laiyuejia.simpleframework.core.annotation.Component;
 import cn.laiyuejia.simpleframework.core.annotation.Controller;
 import cn.laiyuejia.simpleframework.core.annotation.Repository;
@@ -22,7 +23,7 @@ public class BeanContainer {
     private final Map<Class<?>,Object> beanMap = new ConcurrentHashMap();
 
     private static final List<Class<? extends Annotation>> BEAN_ANNOTATION
-            = Arrays.asList(Component.class, Controller.class, Repository.class, Service.class);
+            = Arrays.asList(Component.class, Controller.class, Repository.class, Service.class, Aspect.class);
 
     //获取bean容器
     public static BeanContainer getInstance(){
