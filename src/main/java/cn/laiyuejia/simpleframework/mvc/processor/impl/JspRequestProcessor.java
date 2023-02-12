@@ -15,7 +15,7 @@ public class JspRequestProcessor implements RequestProcessor {
 
     public JspRequestProcessor(ServletContext servletContext){
         this.jspServlet = servletContext.getNamedDispatcher(JSP_SERVLET);
-        if(null ==jspServlet){
+        if(null == jspServlet){
             throw new RuntimeException("没有找到jsp servlet");
         }
     }
