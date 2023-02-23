@@ -10,13 +10,13 @@
 
 <div align="center">
 <img src="https://img.shields.io/badge/Java-1.8-orange"/>
-<img src="https://img.shields.io/badge/cglib-3.3.0-green"/>
-<img src="https://img.shields.io/badge/aspectjweaver-1.9.19-yellowgreen"/>
+<img src="https://img.shields.io/badge/CGLIB-3.3.0-green"/>
+<img src="https://img.shields.io/badge/AspectJWeaver-1.9.19-yellowgreen"/>
 <img src="https://img.shields.io/badge/javax.servlet.jsp--api-2.3.3-blue"/>
 <img src="https://img.shields.io/badge/javax.servlet--api-4.0.1-lightgrey"/>
 <img src="https://img.shields.io/badge/Gson-2.8.9-yellow"/>
 <img src="https://img.shields.io/badge/Slf4j--log4j12-1.7.36-yellow"/>
-<img src="https://img.shields.io/badge/lombok-1.18.24-blue"/>
+<img src="https://img.shields.io/badge/Lombok-1.18.24-blue"/>
 </div>
 
 ## 项目简介
