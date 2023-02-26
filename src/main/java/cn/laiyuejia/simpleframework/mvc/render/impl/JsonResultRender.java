@@ -1,6 +1,7 @@
-package cn.laiyuejia.simpleframework.mvc.render;
+package cn.laiyuejia.simpleframework.mvc.render.impl;
 
 import cn.laiyuejia.simpleframework.mvc.RequestProcessorChain;
+import cn.laiyuejia.simpleframework.mvc.render.ResultRender;
 import com.google.gson.Gson;
 
 import java.io.PrintWriter;
@@ -8,7 +9,7 @@ import java.io.PrintWriter;
 /**
  * Json渲染器
  */
-public class JsonResultRender implements ResultRender{
+public class JsonResultRender implements ResultRender {
 
     private Object jsonData;
 

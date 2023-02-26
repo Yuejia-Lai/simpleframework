@@ -1,6 +1,7 @@
-package cn.laiyuejia.simpleframework.mvc.render;
+package cn.laiyuejia.simpleframework.mvc.render.impl;
 
 import cn.laiyuejia.simpleframework.mvc.RequestProcessorChain;
+import cn.laiyuejia.simpleframework.mvc.render.ResultRender;
 import cn.laiyuejia.simpleframework.mvc.type.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,7 +11,7 @@ import java.util.Map;
 /**
  * 页面渲染器
  */
-public class ViewResultRender implements ResultRender{
+public class ViewResultRender implements ResultRender {
 
     private ModelAndView modelAndView;
 

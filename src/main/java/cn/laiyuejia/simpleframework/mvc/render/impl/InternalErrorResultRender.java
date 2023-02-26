@@ -1,13 +1,14 @@
-package cn.laiyuejia.simpleframework.mvc.render;
+package cn.laiyuejia.simpleframework.mvc.render.impl;
 
 import cn.laiyuejia.simpleframework.mvc.RequestProcessorChain;
+import cn.laiyuejia.simpleframework.mvc.render.ResultRender;
 
 import javax.servlet.http.HttpServletResponse;
 
 /**
  * 内部异常渲染器
  */
-public class InternalErrorResultRender implements ResultRender{
+public class InternalErrorResultRender implements ResultRender {
 
     private String errorMsg;
 

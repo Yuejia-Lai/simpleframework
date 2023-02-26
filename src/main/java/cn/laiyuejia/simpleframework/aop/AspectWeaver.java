@@ -105,21 +105,21 @@ public class AspectWeaver {
                 && DefaultAspect.class.isAssignableFrom(aspectClass);
     }
 
-    private void weaveByCategory(Class<? extends Annotation> category, List<AspectInfo> aspectInfos) {
-        //获取代理类集合
-        Set<Class<?>> classSet = beanContainer.getClassesByAnnotation(category);
-        if(ValidationUtil.isEmpty(classSet)){
-            return;
-        }else{
-            //为每个被代理类生成动态代理实例
-            for(Class<?> targetClass : classSet){
-                AspectListExecutor aspectListExecutor = new AspectListExecutor(targetClass,aspectInfos);
-                Object proxy = ProxyCreator.createProxy(targetClass, aspectListExecutor);
-                //将动态代理对象添加到容器，取代未被代理的类实例
-                beanContainer.addBean(targetClass,proxy);
-            }
-        }
-    }
+//    private void weaveByCategory(Class<? extends Annotation> category, List<AspectInfo> aspectInfos) {
+//        //获取代理类集合
+//        Set<Class<?>> classSet = beanContainer.getClassesByAnnotation(category);
+//        if(ValidationUtil.isEmpty(classSet)){
+//            return;
+//        }else{
+//            //为每个被代理类生成动态代理实例
+//            for(Class<?> targetClass : classSet){
+//                AspectListExecutor aspectListExecutor = new AspectListExecutor(targetClass,aspectInfos);
+//                Object proxy = ProxyCreator.createProxy(targetClass, aspectListExecutor);
+//                //将动态代理对象添加到容器，取代未被代理的类实例
+//                beanContainer.addBean(targetClass,proxy);
+//            }
+//        }
+//    }
 
 //    //按切面类根据不同织入目标进行区分
 //    private void categorizedAspect(Map<Class<? extends Annotation>, List<AspectInfo>> categorizedMap, Class<?> aspectClass) {

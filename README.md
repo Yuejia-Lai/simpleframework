@@ -28,18 +28,31 @@
 **SimpleFramework是一个开源的项目，任何企业和个人可以免费学习使用**
 
 - 本项目实现了一个**简易版本的Spring框架**，实现了其三大核心功能：**IOC，AOP，MVC**
-- `core`包实现了框架的核心功能：`bean`的扫描加载，容器的维护，单例模式实现
-- `Inject`包负责依赖注入：`autowired`注解以及单例模式注入以及接口注入实现类
-- `aop`包遵循面向切面编程思想：`Aspect`和`Order`注解负责切面类标识排序，通过cglib动态代理以及aspectjweaver织入横切逻辑，实现动态修改方法逻辑
-- `mvc`包对应于请求分发相关功能：重构`DispatcherServlet`,实现`RequestProcessorChain`责任链`RequestProcessor`矩阵以及`ResultRender`矩阵，完成多种请求的处理与响应
+- `core`包实现了框架的核心功能：`bean`的扫描加载，容器的维护，单例模式实现，以及自定义bean
+- `inject`包负责依赖注入：`Autowired`注解以及单例模式注入以及为接口注入实现类
+- `aop`包遵循面向切面编程思想：`Aspect`和`Order`注解负责切面类标识排序，通过cglib动态代理以及AspectJWeaver织入横切逻辑，实现动态修改方法逻辑
+- `mvc`包对应于请求分发相关功能：重构`DispatcherServlet`,实现`RequestProcessorChain`，`RequestProcessor`矩阵以及`ResultRender`矩阵，完成多种请求的处理与响应渲染
 
 ## 项目架构图
 
+### IOC
+![IOC](IOC.png)
 
+### AOP
+![AOP](AOP.png)
+
+### MVC
+![MVC](MVC.png)
 
 ## 项目用到的技术
 
-
+- Java 1.8
+- Maven
+- CGLIB
+- AspectJWeaver
+- Java Servlet API
+- Gson
+- Lombok
 
 ## 如何使用本项目
 

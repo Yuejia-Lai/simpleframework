@@ -1,13 +1,14 @@
-package cn.laiyuejia.simpleframework.mvc.render;
+package cn.laiyuejia.simpleframework.mvc.render.impl;
 
 import cn.laiyuejia.simpleframework.mvc.RequestProcessorChain;
+import cn.laiyuejia.simpleframework.mvc.render.ResultRender;
 
 import javax.servlet.http.HttpServletResponse;
 
 /**
  * 资源找不到时使用的渲染器
  */
-public class ResourceNotFoundResultRender implements ResultRender{
+public class ResourceNotFoundResultRender implements ResultRender {
 
     private String httpMethod;
 
